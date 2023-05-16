@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Home = () => {
     return (
         <>
@@ -15,10 +16,10 @@ const Home = () => {
                 </div>
             </div>
             <div className='right'>
-                <img className="profilePic" src='../profilePic.jpg' alt="MyImage" />
+                <img className="profilePic" src={process.env.PUBLIC_URL + '/images/ProfilePic.jpg'} alt="MyImage" />
             </div>
         </>
     );
-}
+};
 
 export default Home;
