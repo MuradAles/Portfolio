@@ -1,31 +1,49 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import Skills from './components/Skills';
-import Work from './components/Work';
+import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import { Element, scroller } from 'react-scroll';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const App = () => {
-  return (
-    <Router>
-      <div className='navBar'>
-        <NavBar />
-      </div>
-      <div className='App'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/skills' element={<Skills />} />
-          <Route path='/work' element={<Work />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/projects' element={<Projects />} />
-        </Routes>
-      </div >
-    </Router>
+  const scrollToMiddle = (element) => {
+    scroller.scrollTo(element);
+  };
 
+  return (
+    <>
+      <NavBar scrollTo={scrollToMiddle} />
+      <div className='MainPage'>
+        <Element name="home">
+          <div className='MainComponent'>
+            <Home />
+          </div>
+        </Element>
+        <Element name="aboutMe">
+          <div className='MainComponent aboutMe'>
+            <AboutMe />
+          </div>
+        </Element>
+        <Element name="projects">
+          <div className='MainComponent'>
+            <Projects />
+          </div>
+        </Element>
+        <Element name="contact">
+          <div className='MainComponent last'>
+            <Contact />
+          </div>
+        </Element>
+      </div>
+      <footer className="footer py-4 bg-dark text-white-50">
+        <div className="container text-center">
+          <small>&copy; Murad Aleskerov</small>
+        </div>
+      </footer>
+    </>
   );
-}
+};
 
 export default App;

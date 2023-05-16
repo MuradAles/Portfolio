@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MainPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #0a192f;
+}
+
+.fontName {
+  font-family: "Jazz LET", fantasy;
+}
+
+.MainComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 1000px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.MainComponent:not(.last) {
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.MainComponent.aboutMe {
+  height: 120vh;
+}
+
+.Greeting {
+  color: rgb(155, 184, 243);
+  font-size: 40px;
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.rightSide {
+  margin-left: 50px;
+}
+
+.profilePic {
+  height: 350px;
+  width: 280px;
+}
+
+.Name {
+  color: rgb(230, 238, 255);
+  font-size: 40px;
+}
+
+.TextInfo {
+  color: rgb(152, 164, 202);
+  font-size: 18px;
+}
+
+.Links {
+  color: rgb(147, 205, 255);
+  font-size: 15px;
+}
+
+.contact-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Contact {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(209, 225, 255);
+}
+
+.text-info {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #88a4ff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-button:hover {
+  background-color: #7293ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-info,
+.submit-button {
+  transition: background-color 0.3s ease-in-out;
 }
