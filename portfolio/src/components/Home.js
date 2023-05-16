@@ -1,5 +1,4 @@
 import React from 'react';
-import myImage from '../profilePic.jpg'
 const Home = () => {
     return (
         <>
@@ -16,7 +15,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='right'>
-                <img className="profilePic" src={myImage} alt="MyImage" />
+                <img className="profilePic" src='../profilePic.jpg' alt="MyImage" />
             </div>
         </>
     );
