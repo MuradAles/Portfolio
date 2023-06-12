@@ -24,29 +24,31 @@ const Contact = () => {
     };
 
     return (
-        <div className="contact-container">
-            <h1 className="Contact">Contact</h1>
-            {messageSent ? (
-                <div>
-                    <p className="text-info">Message sent successfully!</p>
-                </div>
-            ) : (
-                <form ref={form} onSubmit={sendEmail}>
-                    <label htmlFor="user_name" className="text-info">
-                        Name
-                    </label>
-                    <input id="user_name" type="text" name="user_name" />
-                    <label htmlFor="user_email" className="text-info">
-                        Email
-                    </label>
-                    <input id="user_email" type="email" name="user_email" />
-                    <label htmlFor="message" className="text-info">
-                        Message
-                    </label>
-                    <textarea id="message" name="message" />
-                    <input type="submit" value="Send" className="submit-button" />
-                </form>
-            )}
+        <div className='MainContainer contact'>
+            <div className="contact-container">
+                <h1 className="Contact">Contact</h1>
+                {messageSent ? (
+                    <div>
+                        <p className="text-info">Message sent successfully!</p>
+                    </div>
+                ) : (
+                    <form ref={form} onSubmit={sendEmail}>
+                        <label htmlFor="user_name" className="text-info">
+                            Name
+                        </label>
+                        <input id="user_name" type="text" name="user_name" />
+                        <label htmlFor="user_email" className="text-info">
+                            Email
+                        </label>
+                        <input id="user_email" type="email" name="user_email" />
+                        <label htmlFor="message" className="text-info">
+                            Message
+                        </label>
+                        <textarea id="message" name="message" />
+                        <input type="submit" value="Send" className="submit-button" />
+                    </form>
+                )}
+            </div>
         </div>
     );
 };

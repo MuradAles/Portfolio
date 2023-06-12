@@ -14,27 +14,19 @@ const App = () => {
 
   return (
     <>
-      <NavBar scrollTo={scrollToMiddle} />
       <div className='MainPage'>
+        <NavBar scrollTo={scrollToMiddle} />
         <Element name="home">
-          <div className='MainComponent'>
-            <Home />
-          </div>
+          <Home />
         </Element>
         <Element name="aboutMe">
-          <div className='MainComponent aboutMe'>
-            <AboutMe />
-          </div>
+          <AboutMe />
         </Element>
         <Element name="projects">
-          <div className='MainComponent'>
-            <Projects />
-          </div>
+          <Projects />
         </Element>
         <Element name="contact">
-          <div className='MainComponent last'>
-            <Contact />
-          </div>
+          <Contact />
         </Element>
       </div>
       <footer className="footer py-4 bg-dark text-white-50">

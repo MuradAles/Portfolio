@@ -1,54 +1,19 @@
+/* Main Components */
 .MainPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #0a192f;
 }
 
-.fontName {
-  font-family: "Jazz LET", fantasy;
-}
-
-.MainComponent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-width: 1000px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-.MainComponent:not(.last) {
-  border-bottom: 1px solid #a3a3a3;
-}
-
-.MainComponent.aboutMe {
-  height: 120vh;
-}
-
-.Greeting {
-  color: rgb(155, 184, 243);
-  font-size: 40px;
-}
-
-.left {
-  margin-right: 20px;
-}
-
-.rightSide {
-  margin-left: 50px;
-}
-
-.profilePic {
-  height: 350px;
-  width: 280px;
-}
-
-.Name {
+.h1_style {
   color: rgb(230, 238, 255);
-  font-size: 40px;
+  font-size: 26px;
+  margin: 0px;
+}
+
+.h2_style {
+  color: rgb(230, 238, 255);
+  font-size: 75px;
+  margin: 0px;
+  font-family: "Jazz LET", fantasy;
 }
 
 .TextInfo {
@@ -56,18 +21,104 @@
   font-size: 18px;
 }
 
-.Links {
-  color: rgb(147, 205, 255);
-  font-size: 15px;
+.gitLogo {
+  height: 50px;
+  color: #88a4ff
 }
 
-.contact-container {
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+/* Home Div */
+.MainContainer {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  border-bottom: 2px solid rgba(203, 203, 203, 0.6);
+  margin-top: 56px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  min-height: 900px;
+  max-height: 100vh;
 }
+
+.Home_Left {
+  width: 300px;
+  flex: 1;
+  margin-left: 10%;
+}
+
+.Home_Right {
+  flex: 1;
+  margin-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profilePic {
+  max-height: 450px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media (max-width: 1200px) {
+  .Home_Left {
+    margin-left: 0px;
+  }
+
+  .Home_Right {
+    margin-right: 0px;
+  }
+
+  .profilePic {
+    max-height: 360px;
+    max-width: 300px;
+  }
+}
+
+/* AboutMe Div */
+.AboutInfo {
+  margin-left: 12%;
+  margin-right: 20%;
+}
+
+.MainContainer.about {
+  min-height: 1000px;
+  margin: 0px;
+}
+
+@media (max-width: 1200px) {
+  .AboutInfo {
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+}
+
+/* Projects Div */
+.ProjectInfo {
+  margin-left: 12%;
+  margin-right: 20%;
+}
+
+@media (max-width: 1200px) {
+  .MainContainer.projects {
+    min-height: 1250px;
+    margin: 0px;
+  }
+
+  .ProjectInfo {
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+}
+
+/* NavBar Div */
+.navbar {
+  width: 100%;
+}
+
+/* Contact Div */
 
 .Contact {
   text-align: center;
@@ -76,11 +127,11 @@
   color: rgb(209, 225, 255);
 }
 
-.text-info {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
+.contact-container {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 input[type='text'],
@@ -103,11 +154,47 @@ textarea {
   cursor: pointer;
 }
 
-.submit-button:hover {
-  background-color: #7293ff;
-}
 
-.text-info,
-.submit-button {
-  transition: background-color 0.3s ease-in-out;
+
+@media (max-width: 768px) {
+  .MainContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    min-height: 1200px;
+  }
+
+  .MainContainer.about {
+    min-height: 1150px;
+  }
+
+  .MainContainer.projects {
+    min-height: 1650px;
+  }
+
+  .MainContainer.contact {
+    padding-top: 100px;
+    min-height: 700px;
+    margin: 0px;
+  }
+
+  .Home_Left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .Home_Right {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .profilePic {
+    margin-top: 20px;
+  }
 }
