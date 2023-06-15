@@ -6,7 +6,7 @@ const Home = () => {
             <div className='Home_Left'>
                 <h1 className='h1_style'>Hello, It's me</h1>
                 <h2 className='h2_style'>Murad</h2>
-                <p className='TextInfo'>Hello and welcome to my website! I'm a master's student of computer science and my passion lies in creating websites and exploring the fascinating field of machine learning. I believe that the combination of these two fields can create powerful tools that can transform the world we live in. Currently, I'm focusing on expanding my knowledge and skills in these areas. I enjoy staying up-to-date with the latest technologies and trends, and love to challenge myself with new projects. Through my website, I hope to showcase some of my work and share my enthusiasm for these subjects. Feel free to browse through my portfolio and get in touch if you have any questions or ideas for collaboration. Thank you for visiting!</p>
+                <p className='TextInfo'>I'm a passionate computer science master's student with a knack for problem-solving and a deep love for web development. I find joy in unraveling complex challenges and transforming them into sleek, functional websites. Building digital solutions is my creative outlet, where I thrive and continuously explore new horizons.</p>
                 <div>
                     <a className='Links' href="https://www.linkedin.com/in/murad-aleskerov/"><img src={process.env.PUBLIC_URL + '/images/LinkedInLogo.png'} alt="MyImage" /></a>
                     <a className='Links' href="https://github.com/MuradAles"><img src={process.env.PUBLIC_URL + '/images/gitLogo.png'} alt="MyImage" /></a>
