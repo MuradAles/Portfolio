@@ -10,9 +10,9 @@ const AboutMe = () => {
                             <strong className="h1_style" style={{ fontSize: '1.2em' }}>Stevens Institute of Technology New Jersey</strong>
                             <br />
                             Master of Science in Computer Science
-                            <span style={{ display: 'inline-block', float: 'right', marginRight: '10px' }}>August 2022 – Current</span>
+                            <span style={{ display: 'inline-block', float: 'right', marginRight: '10px' }}>August 2022 – December 2023</span>
                             <br />
-                            <span style={{ marginLeft: '10px' }}>GPA: 3.7/4</span>
+                            <span style={{ marginLeft: '10px' }}>GPA: 3.6/4</span>
                             <br />
                             <strong className="h1_style" style={{ fontSize: '1.2em' }}>The City College of New York New York</strong>
                             <br />
@@ -46,7 +46,7 @@ const AboutMe = () => {
                         <p className="h1_style">Additional Skills</p>
                         <p className='TextInfo'>
                             Technical Skills:
-                            Python, JavaScript, HTML/CSS, Node.js, React.js, Redis, jQuery, Express.js, MongoDB, WebSocket, Git
+                            Python, JavaScript, HTML/CSS, Node.js, React.js, Vue.js, Next.js, Redis, jQuery, Express.js, MongoDB, MySQL, PostgreSQL, WebSocket, Git
                             <br />
                             Soft Skills:
                             Communication, Time management, Problem-solving, Multitasking, Critical Thinking, Attention to details, Adaptability and Self-Learning, Collaboration and Teamwork

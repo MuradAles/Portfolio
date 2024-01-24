@@ -11,7 +11,6 @@ const Projects = () => {
                 </div>
                 <div>
                     <p className='h1_style'>RunMate</p>
-                    <a className="Links" href="https://runn-mate.web.app/">RunMate</a>
                     <p className='TextInfo'>During my academic experience, I had the opportunity to develop a dynamic Chat application that utilized Socket and MongoDB technologies. This project involved designing and implementing a real-time messaging system, enabling users to engage in seamless and instantaneous communication. Furthermore, I played an integral role in creating a comprehensive friendslist feature, facilitating user connections and meaningful interactions within the platform.</p>
                     <a className="Links" href="https://github.com/peilinF/CS554FinalProject">Github Link</a>
                 </div>
