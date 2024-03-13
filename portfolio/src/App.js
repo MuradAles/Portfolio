@@ -1,11 +1,11 @@
-import './App.css';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import { Element, scroller } from 'react-scroll';
-import 'bootstrap/dist/css/bootstrap.css';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import { Element, scroller } from "react-scroll";
+import "bootstrap/dist/css/bootstrap.css";
 
 const App = () => {
   const scrollToMiddle = (element) => {
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <>
-      <div className='MainPage'>
+      <div className="MainPage">
         <NavBar scrollTo={scrollToMiddle} />
         <Element name="home">
           <Home />
