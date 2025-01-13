@@ -6,11 +6,17 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import { Element, scroller } from "react-scroll";
 import "bootstrap/dist/css/bootstrap.css";
+import { useEffect } from "react";
 
 const App = () => {
   const scrollToMiddle = (element) => {
     scroller.scrollTo(element);
   };
+
+  useEffect(() => {
+    // Redirect to the desired URL
+    window.location.replace("https://muradales.github.io/Muradius/");
+  }, []);
 
   return (
     <>
